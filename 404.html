@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // apply the saved (or system) theme before first paint — no flash
+      try {
+        var t = localStorage.getItem("theme");
+        if (t !== "light" && t !== "dark")
+          t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        if (t === "dark") document.documentElement.classList.add("dark");
+        document.documentElement.style.colorScheme = t;
+      } catch (e) {}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="Wiistream — streaming and content infrastructure for sporting organisations. Own your audience."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Wiistream" />
+    <meta property="og:title" content="Wiistream — Own your audience" />
+    <meta
+      property="og:description"
+      content="Streaming and content infrastructure for sporting organisations. Live with Irish Rugby, WBSC, Leinster & Portmarnock Golf Club."
+    />
+    <meta property="og:url" content="https://wiistream.com" />
+    <meta property="og:image" content="https://wiistream.com/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <link rel="canonical" href="https://wiistream.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://wiistream.com/og.png" />
+    <meta name="twitter:title" content="Wiistream — Own your audience" />
+    <meta
+      name="twitter:description"
+      content="Streaming and content infrastructure for sporting organisations who refuse to give their audience away."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Wiistream — Own your audience</title>
+    <script type="module" crossorigin src="/assets/index-YVbbPTCv.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Byx4saVF.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
