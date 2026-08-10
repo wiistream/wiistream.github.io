@@ -1,6 +1,7 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="64" height="64" rx="14" fill="#ffffff"/>
-  <g transform="translate(7 15) scale(0.0407)" fill="#8D80FF">
+  <!-- The real Wiistream W, scaled to fill the tab icon. Transparent
+       background so it reads on light and dark browser chrome. -->
+  <g transform="translate(2.76 12.25) scale(0.04754)" fill="#8D80FF">
     <path d="M5 127 L305 127 L395 412 L95 412 Z"/>
     <path d="M810 0 L810 415 L395 832 L395 417 Z"/>
     <path d="M1225 0 L1225 415 L810 832 L810 417 Z"/>
